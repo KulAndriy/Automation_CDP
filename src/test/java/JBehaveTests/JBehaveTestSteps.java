@@ -15,10 +15,12 @@ import static org.junit.Assert.assertTrue;
 
 
 public class JBehaveTestSteps {
-    public WebDriver driver;
-    public MainPage mainPage;
-    public LoginPage loginPage;
-    public TestSettings testSettings;
+    private WebDriver driver;
+    private MainPage mainPage;
+    private LoginPage loginPage;
+    private TestSettings testSettings;
+
+
 
     @BeforeScenario
     public void before() {
@@ -34,7 +36,7 @@ public class JBehaveTestSteps {
         driver.quit();
     }
 
-    private void baseUrl(){
+    private void baseUrl() {
         driver.get(testSettings.baseUrl());
     }
 

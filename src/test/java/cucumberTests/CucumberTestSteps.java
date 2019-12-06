@@ -16,10 +16,10 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class CucumberTestSteps {
-    public WebDriver driver;
-    public MainPage mainPage;
-    public LoginPage loginPage;
-    public TestSettings testSettings;
+    private WebDriver driver;
+    private MainPage mainPage;
+    private LoginPage loginPage;
+    private TestSettings testSettings;
 
     @Before
     public void before() {

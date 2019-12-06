@@ -11,6 +11,7 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,8 +30,8 @@ public class RunJBehaveTest extends JUnitStories {
 
     @Override
     public InjectableStepsFactory stepsFactory() {
-//        ArrayList<JBehaveTestSteps> stepFileList = new ArrayList<>();
-//        stepFileList.add(new JBehaveTestSteps());
+        ArrayList<JBehaveTestSteps> stepFileList = new ArrayList<>();
+        stepFileList.add(new JBehaveTestSteps());
 
         return new InstanceStepsFactory(configuration(), new JBehaveTestSteps());
     }
